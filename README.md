@@ -9,7 +9,7 @@ A fully functional product listing page built using **React.js + Next.js**, impl
 - FakeStoreAPI Integration
 
 ## 📸 Live Demo
-[https://your-netlify-site.netlify.app](https://your-netlify-site.netlify.app)
+https://appscrip-task-uttampal.netlify.app/
 
 ---
 
