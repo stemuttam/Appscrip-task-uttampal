@@ -95,18 +95,18 @@ export default function Footer() {
             <div className={styles.footerColumn}>
             <h3>FOLLOW US</h3>
             <div className={styles.socialIcons}>
-              <a href="#linkedin" className={styles.socialIcon} aria-label="Follow us on LinkedIn">in</a>
-              <a href="#instagram" className={styles.socialIcon} aria-label="Follow us on Instagram">📷</a>
+              <img src="images/social/linkedin.jpeg" alt="LinkedIn" className={styles.socialIcon}/>
+              <img src="images/social/instagram.jpeg" alt="Instagram" className={styles.socialIcon}/>
             </div>
 
             <h3 style={{ marginTop: '24px' }}>mettā muse ACCEPTS</h3>
             <div className={styles.paymentMethods}>
-              <div className={styles.paymentIcon} title="Google Pay">GPay</div>
-              <div className={styles.paymentIcon} title="Apple Pay">Apple</div>
-              <div className={styles.paymentIcon} title="Visa">Visa</div>
-              <div className={styles.paymentIcon} title="Mastercard">MC</div>
-              <div className={styles.paymentIcon} title="American Express">Amex</div>
-              <div className={styles.paymentIcon} title="PayPal">PP</div>
+            <img src="/images/payments/gpay.jpeg" alt="Google Pay" className={styles.paymentIcon} />
+            <img src="/images/payments/applepay.png" alt="Apple Pay" className={styles.paymentIcon} />
+            <img src="/images/payments/visa.png" alt="Visa" className={styles.paymentIcon} />
+            <img src="/images/payments/mastercard.png" alt="Mastercard" className={styles.paymentIcon} />
+            <img src="/images/payments/amex.png" alt="American Express" className={styles.paymentIcon} />
+            <img src="/images/payments/paypal.png" alt="PayPal" className={styles.paymentIcon} />
             </div>
           </div>
         </div>
