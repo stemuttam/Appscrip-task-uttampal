@@ -1,0 +1,239 @@
+.footer {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  padding: 48px 0 24px;
+  margin-top: 60px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.topSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 48px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid hsl(0, 0%, 30%);
+  gap: 60px;
+}
+
+.newsletterSection {
+  flex: 1;
+}
+
+.newsletterSection h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: hsl(0, 0%, 100%);
+}
+
+.newsletterSection p {
+  font-size: 14px;
+  color: hsl(0, 0%, 80%);
+  margin-bottom: 24px;
+}
+
+.subscribeForm {
+  display: flex;
+  gap: 12px;
+  max-width: 400px;
+}
+
+.subscribeForm input[type="email"] {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid hsl(0, 0%, 50%);
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+}
+
+.subscribeForm button {
+  padding: 12px 24px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.subscribeForm button:hover {
+  background-color: hsl(0, 0%, 90%);
+}
+
+.subscribeForm button:disabled {
+  background-color: hsl(0, 0%, 60%);
+  cursor: not-allowed;
+}
+
+.footerContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.footerColumn h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: hsl(0, 0%, 100%);
+}
+
+.footerColumn ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footerColumn li {
+  margin-bottom: 8px;
+}
+
+.footerColumn a {
+  color: hsl(0, 0%, 70%);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footerColumn a:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.socialIcons {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.socialIcon {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background-color: hsl(0, 0%, 30%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  line-height: 32px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.socialIcon:hover {
+  background-color: hsl(0, 0%, 50%);
+}
+
+.paymentMethods {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.paymentIcon {
+  width: 40px;
+  height: 24px;
+  background-color: hsl(0, 0%, 30%);
+  border: 1px solid hsl(0, 0%, 50%);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: hsl(0, 0%, 100%);
+}
+
+.contactSection {
+  flex: 1;
+}
+
+.contactSection h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: hsl(0, 0%, 100%);
+}
+
+.contactSection p {
+  color: hsl(0, 0%, 80%);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.contactSection a {
+  color: hsl(0, 0%, 80%);
+  text-decoration: none;
+}
+
+.contactSection a:hover {
+  color: hsl(0, 0%, 100%);
+}
+
+.currencyTitle {
+  margin-top: 24px !important;
+}
+
+.currencyInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.flagIcon {
+  font-size: 16px;
+}
+
+.contactSection small {
+  color: hsl(0, 0%, 60%);
+  font-size: 12px;
+  display: block;
+  margin-top: 8px;
+}
+
+.footerColumn p {
+  color: hsl(0, 0%, 80%);
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footerColumn small {
+  color: hsl(0, 0%, 60%);
+  font-size: 12px;
+}
+
+.footerBottom {
+  text-align: center;
+  padding-top: 24px;
+  border-top: 1px solid hsl(0, 0%, 30%);
+  font-size: 12px;
+  color: hsl(0, 0%, 70%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .topSection {
+    flex-direction: column;
+    gap: 32px;
+  }
+  
+  .subscribeForm {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .footerContent {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}

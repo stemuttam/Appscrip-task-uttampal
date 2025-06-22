@@ -1,0 +1,108 @@
+.header {
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+  padding: 20px 0;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo h1 {
+  font-weight: bold;
+  font-size: 24px;
+  color: hsl(0, 0%, 0%);
+  margin: 0;
+}
+
+.navMenu {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navMenu a {
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navMenu a:hover {
+  color: hsl(0, 0%, 40%);
+}
+
+.headerIcons {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.leftSpacer {
+  flex: 1;
+}
+
+.icon {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+.icon:hover {
+  background-color: hsl(0, 0%, 96%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .topRow {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .logo {
+    position: static;
+    transform: none;
+  }
+  
+  .navMenu {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navMenu,
+  .headerIcons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

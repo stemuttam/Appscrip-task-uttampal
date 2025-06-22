@@ -1,0 +1,62 @@
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolbarLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.itemCount {
+  font-size: 14px;
+  color: hsl(0, 0%, 40%);
+  font-weight: 500;
+}
+
+.filterToggle {
+  background: none;
+  border: 1px solid hsl(0, 0%, 80%);
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.filterToggle:hover {
+  background-color: hsl(0, 0%, 96%);
+}
+
+.sortDropdown {
+  padding: 8px 12px;
+  border: 1px solid hsl(0, 0%, 80%);
+  border-radius: 4px;
+  background-color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 16px;
+  }
+}
